@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Task4</title>
+    <style>
+        #sidebar a {
+    position: absolute;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+  }
+  
+  #sidebar a:hover {
+    left: 0;
+  }
+  
+  #Home {
+    top: 20px;
+    background-color: rgb(10, 173, 108);
+  }
+  
+  #Contact {
+    top: 80px;
+    background-color: rgb(37, 151, 239);
+  }
+  
+  #About {
+    top: 140px;
+    background-color: rgb(244, 64, 44);
+  }
+  
+  #More {
+    top: 200px;
+    background-color: rgb(81, 81, 81);
+  }
+    </style>
+</head>
+<body>
+    <div id="sidebar">
+        <a id="Home" href="#">Home</a>
+        <a id="Contact" href="#">Contact</a>
+        <a id="About" href="#">About</a>
+        <a id="More" href="#">More</a>
+    </div>
+    <h2 style="margin-left:100px;">Hoverable Sidenav Buttons</h2>
+    <p style="margin-left:100px;">Hover over the buttons in the left side navigation to open them.</p>
+</body>
+</html>

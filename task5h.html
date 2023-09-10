@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <style>
+    table {
+      width: 50%;
+      border: 1px solid #000;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    table, th, td {
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 20px; /* Add margin-top to create space between button and table */
+    }
+
+    .login-row td {
+      text-align: right; /* Align the text to the right */
+    }
+  </style>
+</head>
+<body>
+    <h1 style="margin-bottom: 20px;text-align: center;color: blue;">Registration Form</h1>
+  <form>
+    <table border="1">
+      <tr>
+        <td>First Name:</td>
+        <td><input type="text" name="firstname" required></td>
+      </tr>
+      <tr>
+        <td>Last Name:</td>
+        <td><input type="text" name="lastname" required></td>
+      </tr>
+      <tr>
+        <td>Email:</td>
+        <td><input type="email" name="email" required></td>
+      </tr>
+      <tr>
+        <td>Password:</td>
+        <td><input type="password" name="password" required></td>
+      </tr>
+      <tr>
+        <td>Re-enter Password:</td>
+        <td><input type="password" name="repassword" required></td>
+      </tr>
+      <tr>
+        <td>Gender:</td>
+        <td>
+          <input type="radio" name="gender" value="male" required> Male<br>
+          <input type="radio" name="gender" value="female" required> Female
+        </td>
+      </tr>
+      <tr>
+        <td>Age:</td>
+        <td><input type="number" name="age" required></td>
+      </tr>
+      <tr>
+        <td>Phone Number:</td>
+        <td><input type="tel" name="phone"></td>
+      </tr>
+      <tr>
+        <td>Address:</td>
+        <td><textarea name="address" rows="4" required></textarea></td>
+      </tr>
+      <tr>
+        <td>State:</td>
+        <td><input type="text" name="state" required></td>
+      </tr>
+      <tr>
+        <td>Country:</td>
+        <td>
+          <select name="country" required>
+            <option value="">Select a country</option>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <!-- Add more countries as needed -->
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Languages Known:</td>
+        <td>
+          <input type="checkbox" name="languages[]" value="english"> English
+          <input type="checkbox" name="languages[]" value="kannada"> Kannada
+          <input type="checkbox" name="languages[]" value="hindi"> Hindi
+          <input type="checkbox" name="languages[]" value="telugu"> Telugu
+        </td>
+      </tr>
+      <tr class="login-row"> <!-- Added a class to style the login row -->
+        <td colspan="2">
+          <div style="float:right;"> <!-- Align the content to the right -->
+            Log in to <a href="#">Ethnus</a> Website
+          </div>
+        </td>
+      </tr>
+    </table>
+    <div class="button-container">
+      <button type="submit">Register</button>
+    </div>
+  </form>
+</body>
+</html>
